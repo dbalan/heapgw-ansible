@@ -16,3 +16,10 @@
     rule: limit
     port: ssh
     proto: tcp
+
+- name: allow tcp incoming to {{ item }}
+  ufw:
+    rule: allow
+    port: 220{{item}}
+    proto: tcp
+  with_sequence: start=2 count={{servers | count }}
