@@ -6,4 +6,6 @@
   roles:
     - firewall
     - nginx
-
+  vars:
+    sport: 1234
+    server: "2a0c:2f07:72:90::5"
