@@ -1,0 +1,18 @@
+---
+- name: Setup UFW
+  ufw:
+    state: enabled
+    policy: reject
+    logging: on
+
+- name: allow SSH
+  ufw:
+    rule: allow
+    port: ssh
+    proto: tcp
+
+- name: limit SSH
+  ufw:
+    rule: limit
+    port: ssh
+    proto: tcp
