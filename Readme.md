@@ -10,7 +10,11 @@ If you don't have access to heap machines already, this is not going to give you
 Easiest way is to append following snippet to your `$HOME/.ssh/config` file
 
 ```
-Host brome
+Host spring
+	Hostname heapgw.dbalan.in
+	Port 2201
+	
+Host broome
 	Hostname heapgw.dbalan.in
 	Port 2202
 
@@ -21,11 +25,6 @@ Host crosby
 Host  mercer
 	Hostname heapgw.dbalan.in
 	Port 2204
-
-Host spring
-	Hostname heapgw.dbalan.in
-	Port 2205
-
 ```
 
 Now you can ssh to heap machines using their name, to connect to mercer run
