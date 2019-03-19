@@ -22,4 +22,4 @@
     rule: allow
     port: 220{{item}}
     proto: tcp
-  with_sequence: start=2 count={{servers | count }}
+  with_sequence: start=1 count={{servers | count }}
