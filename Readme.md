@@ -10,6 +10,10 @@ If you don't have access to heap machines already, this is not going to give you
 Easiest way is to append following snippet to your `$HOME/.ssh/config` file
 
 ```
+Host spring
+	Hostname heapgw.dbalan.in
+	Port 2201
+
 Host brome
 	Hostname heapgw.dbalan.in
 	Port 2202
@@ -18,13 +22,9 @@ Host crosby
 	Hostname heapgw.dbalan.in
 	Port 2203
 
-Host  mercer
+Host mercer
 	Hostname heapgw.dbalan.in
 	Port 2204
-
-Host spring
-	Hostname heapgw.dbalan.in
-	Port 2205
 
 ```
 
