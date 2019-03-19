@@ -1,0 +1,14 @@
+---
+- name: Install nginx and configure tcp proxy to outside world
+  hosts: "{{ hpgw }}"
+  remote_user: root
+
+  roles:
+    - firewall
+    - nginx
+  vars:
+    servers:
+      - "2a0c:2f07:72:90::5" # spring.cluster.recurse.com
+      - "2a0c:2f07:72:90::4" # broome.cluster.recurse.com
+      - "2a0c:2f07:72:90::3" # crosby.cluster.recurse.com
+      - "2a0c:2f07:72:90::2" # mercer.cluster.recurse.com

@@ -1,6 +1,6 @@
 ---
 - name: Install nginx and configure tcp proxy to outside world
-  hosts: heapgw
+  hosts: all
   remote_user: root
 
   roles:
